@@ -1,0 +1,100 @@
+[
+  {
+    "id": "1",
+    "title": "Красный бархат",
+    "vendor_code": "111",
+    "description": "",
+    "price": 1200,
+    "img": "https://i.pinimg.com/236x/2e/72/d5/2e72d5cf83518f4e38f9b93d1e5e1134.jpg"
+  },
+  {
+    "id": "2",
+    "title": "Черный Лес",
+    "vendor_code": "222",
+    "description": "",
+    "price": 1500,
+    "img": "https://i.pinimg.com/236x/e5/f7/e6/e5f7e6fa6e5a4f1f3d1d2259a1e4f20b.jpg"
+  },
+  {
+    "id": "3",
+    "title": "Морковный торт",
+    "vendor_code": "333",
+    "description": "",
+    "price": 1300,
+    "img": "https://i.pinimg.com/236x/a8/8c/f2/a88cf2b85bbe6985ff7920a768bee98c.jpg"
+  },
+  {
+    "id": "4",
+    "title": "Бенто-торт",
+    "vendor_code": "444e",
+    "description": "",
+    "price": 900,
+    "img": "https://i.pinimg.com/236x/7d/31/20/7d3120c45844a92526b1a18ed3ea3a2b.jpg"
+  }
+  ,
+  {
+    "id": "5",
+    "title": "Набор макарон",
+    "vendor_code": "4445e",
+    "description": "",
+    "price": 1000,
+    "img": "https://i.pinimg.com/236x/5a/44/29/5a442912d8ff8c78a0d59c79a4ad9461.jpg"
+  },
+  {
+    "id": "6",
+    "title": "Яблочный пирог",
+    "vendor_code": "4446e",
+    "description": "",
+    "price": 800,
+    "img": "https://i.pinimg.com/236x/a6/6d/56/a66d568c6a00f21cd57d2b8a8a68b5eb.jpg"
+  },
+  {
+    "id": "7",
+    "title": "Вишневый пирог",
+    "vendor_code": "4447e",
+    "description": "",
+    "price": 850,
+    "img": "https://i.pinimg.com/236x/e8/31/93/e83193953d51d9544749edde1bd1fe56.jpg"
+  },
+  {
+    "id": "8",
+    "title": "Шоколадное печенье",
+    "vendor_code": "4448e",
+    "description": "",
+    "price": 400,
+    "img": "https://i.pinimg.com/236x/73/79/50/7379500df72e302c3e484d4f8ac38465.jpg"
+  },
+  {
+    "id": "9",
+    "title": "Круассан",
+    "vendor_code": "444e",
+    "description": "",
+    "price": 250,
+    "img": "https://i.pinimg.com/236x/83/62/36/836236b66acf727b2caed1f238d3287d.jpg"
+  }
+  ,
+  {
+    "id": "10",
+    "title": "Pain au chocolat",
+    "vendor_code": "44410e",
+    "description": "",
+    "price": 270,
+    "img": "https://i.pinimg.com/236x/7f/9d/87/7f9d871e53e6190a1b55c003777aa4e8.jpg"
+  },
+  {
+    "id": "11",
+    "title": "Миндальный круассан",
+    "vendor_code": "44411e",
+    "description": "",
+    "price": 300,
+    "img": "https://i.pinimg.com/236x/48/53/2c/48532c78cf66fe74c51e4319370484d8.jpg"
+  },
+  {
+    "id": "11",
+    "title": "Пахлава",
+    "vendor_code": "44411e",
+    "description": "",
+    "price": 600,
+    "img": "https://i.pinimg.com/236x/b1/46/aa/b146aaacfd4136aef4d2ee579a741648.jpg"
+  }
+]
