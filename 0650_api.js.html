@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>0650_api.js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #2aacb8;}
+.s4 { color: #7a7e85;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+0650_api.js</font>
+</center></td></tr></table>
+<pre><span class="s0">function </span><span class="s1">sort(){</span>
+    <span class="s1">let price=document.getElementById(</span><span class="s2">&quot;price&quot;</span><span class="s1">)</span>
+    <span class="s1">let title=document.getElementById(</span><span class="s2">&quot;title&quot;</span><span class="s1">)</span>
+    <span class="s0">if</span><span class="s1">(price.checked){</span>
+        <span class="s1">document.getElementById(</span><span class="s2">'node_for_insert'</span><span class="s1">).innerHTML = </span><span class="s2">''</span><span class="s1">;</span>
+         <span class="s1">getResponce()}</span>
+
+    <span class="s0">if</span><span class="s1">(title.checked){</span>
+        <span class="s1">document.getElementById(</span><span class="s2">'node_for_insert'</span><span class="s1">).innerHTML = </span><span class="s2">''</span><span class="s1">;</span>
+        <span class="s1">getResponce1()}</span>
+<span class="s1">}</span>
+
+<span class="s1">async </span><span class="s0">function </span><span class="s1">getResponce() {</span>
+
+    <span class="s1">let responce = await fetch(</span><span class="s2">&quot;shop.json&quot;</span><span class="s1">)</span>
+
+    <span class="s1">let content = await responce.text()</span>
+    <span class="s1">console.log(content)</span>
+    <span class="s1">content = JSON.parse(content)</span>
+    <span class="s1">content = content.splice(</span><span class="s3">0</span><span class="s1">, </span><span class="s3">12</span><span class="s1">)</span>
+    <span class="s4">//content.sort()</span>
+    <span class="s1">console.log(content)</span>
+    <span class="s1">let key</span>
+    <span class="s4">/*for (key in content) { 
+        console.log(content[key].id, content[key].title) 
+        console.log(content[key]) 
+    }*/</span>
+    <span class="s1">content_price=content.sort((a, b) =&gt; a.price - b.price);</span>
+
+    <span class="s1">let node_for_insert = document.getElementById(</span><span class="s2">&quot;node_for_insert&quot;</span><span class="s1">)</span>
+    <span class="s4">//node_for_insert.innerHTML='';</span>
+    <span class="s0">for </span><span class="s1">(key </span><span class="s0">in </span><span class="s1">content_price) {</span>
+                <span class="s1">node_for_insert.innerHTML += `</span>
+                <span class="s1">&lt;li style=</span><span class="s2">&quot;width: 310px&quot; </span><span class="s1">class=</span><span class="s2">&quot;d-flex flex-column m-1 p-1 border bg-body&quot;</span><span class="s1">&gt;</span>
+                <span class="s1">&lt;img style=</span><span class="s2">&quot;width: 180px&quot; </span><span class="s1">class=</span><span class="s2">&quot;align-self-center&quot; </span><span class="s1">src=${content[key].img}&gt;</span>
+                <span class="s1">&lt;h5 class=</span><span class="s2">&quot;card-title&quot;</span><span class="s1">&gt;${content[key].title}&lt;/h5&gt;</span>
+                <span class="s1">&lt;p class=</span><span class="s2">&quot;card-text&quot;</span><span class="s1">&gt;${content[key].description}. Цена ${content[key].price+content[key].price*</span><span class="s3">0.2</span><span class="s1">} р.&lt;/p&gt;</span>
+                <span class="s1">&lt;input type=</span><span class="s2">&quot;hidden&quot; </span><span class="s1">name= </span><span class="s2">&quot;vendor_code&quot; </span><span class="s1">value=${content[key].vendor_code}&gt;</span>
+                <span class="s1">&lt;p class=</span><span class="s2">&quot;card-text&quot; </span><span class="s1">&gt;Заказать &lt;input class=</span><span class="s2">&quot;w-25&quot; </span><span class="s1">type=</span><span class="s2">&quot;number&quot; </span><span class="s1">name=</span><span class="s2">&quot;amount&quot; </span><span class="s1">value=</span><span class="s2">&quot;0&quot; </span><span class="s1">&gt;&lt;/p&gt;</span>
+                <span class="s1">&lt;/li&gt;</span>
+                        <span class="s1">`</span>
+            <span class="s1">}</span>
+
+<span class="s1">}</span>
+<span class="s1">async </span><span class="s0">function </span><span class="s1">getResponce1() {</span>
+   <span class="s4">// let responce = await fetch(&quot;https://my-json-server.typicode.com/typicode/demo/posts&quot;)</span>
+    <span class="s4">//let responce = await fetch(&quot;https://vmarshirov.github.io/g06u28/030_js/data/0620.json&quot;)</span>
+    <span class="s4">//let responce = await fetch(&quot;http://185.182.111.214:7628/tmp/g06u28.txt_api.json&quot;)</span>
+<span class="s4">//    let responce = await fetch(&quot;shop.json&quot;)</span>
+    <span class="s1">let responce = await fetch(</span><span class="s2">&quot;shop.json&quot;</span><span class="s1">)</span>
+
+    <span class="s1">let content = await responce.text()</span>
+    <span class="s1">console.log(content)</span>
+    <span class="s1">content = JSON.parse(content)</span>
+    <span class="s1">content = content.splice(</span><span class="s3">0</span><span class="s1">, </span><span class="s3">12</span><span class="s1">)</span>
+    <span class="s4">//content.sort()</span>
+    <span class="s1">console.log(content)</span>
+    <span class="s1">let key</span>
+    <span class="s4">/*for (key in content) { 
+        console.log(content[key].id, content[key].title) 
+        console.log(content[key]) 
+    }*/</span>
+
+    <span class="s4">// sort by name</span>
+    <span class="s1">content_title=content.sort((a, b) =&gt; {</span>
+    <span class="s1">const nameA = a.title.toUpperCase(); </span><span class="s4">// ignore upper and lowercase</span>
+    <span class="s1">const nameB = b.title.toUpperCase(); </span><span class="s4">// ignore upper and lowercase</span>
+      <span class="s0">if </span><span class="s1">(nameA &lt; nameB) {</span>
+        <span class="s0">return </span><span class="s1">-</span><span class="s3">1</span><span class="s1">;</span>
+      <span class="s1">}</span>
+      <span class="s0">if </span><span class="s1">(nameA &gt; nameB) {</span>
+        <span class="s0">return </span><span class="s3">1</span><span class="s1">;</span>
+      <span class="s1">}</span>
+
+      <span class="s4">// names must be equal</span>
+      <span class="s0">return </span><span class="s3">0</span><span class="s1">;</span>
+    <span class="s1">});</span>
+
+   <span class="s4">// node_for_insert.innerHTML='';</span>
+    <span class="s1">let node_for_insert = document.getElementById(</span><span class="s2">&quot;node_for_insert&quot;</span><span class="s1">)</span>
+    <span class="s0">for </span><span class="s1">(key </span><span class="s0">in </span><span class="s1">content_title) {</span>
+                <span class="s1">node_for_insert.innerHTML += `</span>
+                <span class="s1">&lt;li style=</span><span class="s2">&quot;width: 310px&quot; </span><span class="s1">class=</span><span class="s2">&quot;d-flex flex-column m-1 p-1 border bg-body&quot;</span><span class="s1">&gt;</span>
+                <span class="s1">&lt;img style=</span><span class="s2">&quot;width: 180px&quot; </span><span class="s1">class=</span><span class="s2">&quot;align-self-center&quot; </span><span class="s1">src=${content[key].img}&gt;</span>
+                <span class="s1">&lt;h5 class=</span><span class="s2">&quot;card-title&quot;</span><span class="s1">&gt;${content[key].title}&lt;/h5&gt;</span>
+                <span class="s1">&lt;p class=</span><span class="s2">&quot;card-text&quot;</span><span class="s1">&gt;${content[key].description}. Цена ${content[key].price+content[key].price*</span><span class="s3">0.2</span><span class="s1">} р.&lt;/p&gt;</span>
+                <span class="s1">&lt;input type=</span><span class="s2">&quot;hidden&quot; </span><span class="s1">name= </span><span class="s2">&quot;vendor_code&quot; </span><span class="s1">value=${content[key].vendor_code}&gt;</span>
+                <span class="s1">&lt;p class=</span><span class="s2">&quot;card-text&quot; </span><span class="s1">&gt;Заказать &lt;input class=</span><span class="s2">&quot;w-25&quot; </span><span class="s1">type=</span><span class="s2">&quot;number&quot; </span><span class="s1">name=</span><span class="s2">&quot;amount&quot; </span><span class="s1">value=</span><span class="s2">&quot;0&quot; </span><span class="s1">&gt;&lt;/p&gt;</span>
+                <span class="s1">&lt;/li&gt;</span>
+                        <span class="s1">`</span>
+            <span class="s1">}</span>
+
+<span class="s1">}</span>
+
+<span class="s1">sort()</span></pre>
+</body>
+</html>
