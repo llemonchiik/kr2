@@ -1,0 +1,213 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Poppins", sans-serif;
+}
+
+.header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 100px;
+background:black;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:100;
+}
+
+.logo{
+font-size:32px;
+color:white;
+text-decoration:none;
+margin-left:40px;
+}
+
+
+.navbar a{
+position:relative;
+font-size:18px;
+color:white;
+font-weight:500;
+text-decoration:none;
+margin-left:40px;
+}
+
+.navbar a::before{
+content:'';
+position:absolute;
+top:100%;
+left:0;
+width:0;
+height:2px;
+background:white;
+transition:.3s;
+}
+
+.navbar a:hover::before{
+width:100%;
+}
+
+nav a.active {
+    font-weight:bold;
+}
+
+.bakery{
+width:100%;
+height:120px;
+}
+
+.container{
+bottom:1000px;
+}
+footer{
+background-color:black;
+}
+.row-1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.side-1 {
+  flex: 30%;
+  padding: 20px;
+  position:relative;
+  left:140px;
+}
+.main-1 {
+  flex: 10%;
+  padding: 20px;
+  position:relative;
+  right:100px;
+}
+p{
+font-weight:normal;
+font-family: "Playfair Display", serif;
+font-size:30px;
+}
+
+.card-text{
+font-size:20px;}
+
+.interior{
+position:relative;
+width:250px;
+height:315px;
+left:50px;
+}
+.text{
+color:black;
+font-family: "Playfair Display", serif;
+font-weight:normal;
+}
+.info{
+font-weight:bold;
+font-family: "Playfair Display", serif;
+font-style:italic;
+font-size:60px;
+}
+
+.arrow{
+position:relative;
+}
+
+.time{
+width:250px;
+margin-left:148px;
+}
+
+.info-1{
+font-weight:bold;
+font-family: "Playfair Display", serif;
+font-style:italic;
+font-size:60px;
+margin-left:420px;
+}
+.dates{
+position:relative;
+font-family:"Playfair Display", serif;
+font-size:25px;
+margin-left:158px;
+font-style:italic;
+bottom:40px;
+}
+.p-1{
+font-family:"Playfair Display",serif;
+font-size:25px;
+text-align:center;
+position:relative;
+left:40px;
+bottom:42px;
+}
+
+.p-2{
+position:relative;
+font-family:"Playfair Display",serif;
+font-size:25px;
+text-align:justify;
+}
+
+.p-3{
+font-family:"Playfair Display",serif;
+font-size:25px;
+text-align:;
+position:relative;
+bottom:45px;
+}
+.p-4{
+font-family:"Playfair Display",serif;
+font-size:25px;
+text-align:center;
+position:relative;
+bottom:45px;
+}
+
+.time-1{
+position:relative;
+width:250px;
+left:60px;
+}
+
+.time-2{
+width:250px;
+position:relative;
+left:40px;
+}
+
+.time-3{
+width:250px;
+position:relative;
+left:30px;
+}
+
+.dates-1{
+position:relative;
+font-family:"Playfair Display", serif;
+font-size:25px;
+left:50px;
+top:30px;
+font-style:italic;
+}
+
+.dates-2{
+position:relative;
+font-family:"Playfair Display", serif;
+font-size:25px;
+left:45px;
+bottom:40px;
+font-style:italic;
+}
+
+.dates-3{
+position:relative;
+font-family:"Playfair Display", serif;
+font-size:25px;
+left:100px;
+bottom:35px;
+font-style:italic;
+}
+
+.card-body{
+background-color:white;
+}
