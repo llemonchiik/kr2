@@ -242,8 +242,8 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 
-.btn {
-  background-color: green;
+.btn-1 {
+  background-color: gray;
   color: white;
   padding: 16px 20px;
   border: none;
@@ -252,20 +252,15 @@ input[type=text]:focus, input[type=password]:focus {
   opacity: 0.9;
 }
 
-.btn:hover {
+.btn-1:hover {
   opacity: 2;
-  color:green;
 }
-
-
 
 .application{
 position:relative;
 left:45px;
 font-family:"Playfair Display", serif;
 }
-
-
 
 .card-body{
 background-color:white;
