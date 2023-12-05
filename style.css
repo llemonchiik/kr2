@@ -207,6 +207,67 @@ left:100px;
 bottom:35px;
 font-style:italic;
 }
+.bg-img {
+  background-image: url("http://klublady.ru/uploads/posts/2022-02/1644754513_30-klublady-ru-p-mini-pirozhnie-foto-30.jpg");
+  min-height: 850px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.container-1 {
+  position: absolute;
+  right: 100px;
+  margin: 20px;
+  max-width: 400px;
+  top:150px;
+  padding: 16px;
+  background-color: white;
+}
+
+
+  input[type=text], input[type=number] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.btn {
+  background-color: green;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 2;
+  color:green;
+}
+
+body{
+height:100%;
+}
+
+.application{
+position:relative;
+left:45px;
+font-family:"Playfair Display", serif;
+}
+
+
 
 .card-body{
 background-color:white;
