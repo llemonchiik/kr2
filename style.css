@@ -62,10 +62,7 @@ height:120px;
 .container{
 bottom:1000px;
 }
-footer{
-background-color:black;
-width:100%;
-}
+
 .row-1 {
   display: flex;
   flex-wrap: wrap;
