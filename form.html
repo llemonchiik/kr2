@@ -5,6 +5,8 @@
      <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>form</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
 <header class="header">
@@ -17,19 +19,37 @@
 
         </nav>
     </header>
+<div class="bg-img">
+  <form action="https://www.yandex.ru/search" id="UserEnter" name="UserEnter" method="get" target="_blank" class="container-1">
+    <h1 class="application">Оставь заявку</h1>
 
+      <label><b>Имя</b></label>
+      <input type="text" placeholder="Введите имя" name="name" required>
 
+      <label><b>Фамилия</b></label>
+      <input type="text" placeholder="Введите фамилию" name="last-name" required>
 
+      <label><b>Телефон</b></label>
+      <input type="number" placeholder="Введите номер" name="phone-number" required>
 
+    <label><b>Электронная почта</b></label>
+    <input type="text" placeholder="Введите электронную почту" name="email" required>
 
+    <label><b>Город</b></label>
+       <br><input type="radio" name="city" value=""> Москва
+                            <br><input type="radio" name="city" value=""> Санкт-Петербург
+                            <br><input type="radio" name="city" value=""> Пермь
+                            <br><input type="radio" name="city" value=""> Екатеринбург
+
+    <button type="submit" class="btn">Отправить</button>
+  </form>
+</div>
 
     <a href="#top" target="_self"><img src="https://e26f86a1-a349-40e0-9864-90f0278f7cc5.selcdn.net/tb/0.1.587/images/icons/back-to-top.svg" width="50" height="50" align="right"></a>
-<footer>
-<table border="0" width="100%" align="center">
-    <tr>
-        <td valign><img src="debd38854b0ad48c281a788eb6003bc0-transformed.png"></td>
-    </tr>
-</table>
-</footer>
+ <div class="footer-container">
+<p><img class="arrow" src="debd38854b0ad48c281a788eb6003bc0-transformed.png"></p>
+</div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>
