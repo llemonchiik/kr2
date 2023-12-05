@@ -255,3 +255,21 @@ background-color: black;
 padding: 20px;
 box-sizing: border-box;
 }
+.radio{
+position:relative;
+top:10px;
+right:125px;
+}
+.radio-1{
+position:relative;
+top:10px;
+right:95px;
+}
+.word{
+font-family:"Playfair Display",serif;
+font-size:20px;
+float:left;
+margin:10px 0 0 10px;
+position:relative;
+bottom:30px;
+}
