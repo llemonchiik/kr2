@@ -57,6 +57,7 @@ nav a.active {
 .bakery{
 width:100%;
 height:120px;
+object-fit:cover;
 }
 
 .container{
